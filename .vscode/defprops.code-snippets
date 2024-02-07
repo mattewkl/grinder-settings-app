@@ -1,0 +1,10 @@
+{
+    "defineProps": {
+    "scope" : "vue, javascript, typescript",
+    "prefix" : "defp<Props>",
+    "body": [
+        "defineProps<Props>();",
+    ],
+    "description": "Define props with type <Props>"
+}
+}

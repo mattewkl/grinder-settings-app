@@ -1,0 +1,125 @@
+
+
+
+$media-desktop: 1439px;
+$media-tablet-l: 1023px;
+$media-tablet-s: 767px;
+$media-mobile: 459px;
+
+html {
+    @media (min-width: $media-desktop) {
+        font-size: 0.694vw;
+    }
+    @media (max-width: $media-desktop) {
+        font-size: 10px;
+    }
+}
+
+
+$gray-100: rgba(245, 246, 246, 1);
+$gray-200: rgba(239, 240, 241, 1);
+$gray-300: rgba(227, 228, 232, 1);
+$gray-400: rgba(183, 184, 188, 1);
+$gray-500: rgba(64, 64, 69, 1);
+$white-tr-100: rgba(255, 255, 255, 0.2);
+$white-tr-200: rgba(255, 255, 255, 0.8);
+
+$blue-100: rgba(233, 247, 255, 1);
+$blue-200: rgba(42, 171, 238, 1);
+$blue-300: rgba(24, 157, 225, 1);
+
+$red-100: rgba(255, 235, 240, 1);
+$red-200: rgba(237, 3, 53, 1);
+$red-300: rgba(222, 0, 47, 1);
+
+$green-100: rgba(217, 246, 225, 1);
+$green-200: rgba(78, 203, 113, 1);
+
+$yellow-100: rgba(255, 240, 200, 1);
+$yellow-200: rgba(254, 193, 37, 1);
+
+$black-tr-100: rgba(0, 0, 0, 0.2);
+$black-tr-200: rgba(0, 0, 0, 0.8);
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: $gray-100;
+}
+
+body.no-scroll-y {
+    overflow-y: hidden;
+}
+
+
+.standart-link {
+    color: $blue-200;
+    &:hover {
+        color: $blue-300
+    }
+}
+
+
+@mixin to-white {
+    filter:  invert(97%) sepia(0%) saturate(0%) hue-rotate(56deg) brightness(102%) contrast(105%);
+}
+
+@mixin to-red-300 {
+    filter: invert(12%) sepia(84%) saturate(6208%) hue-rotate(342deg) brightness(85%) contrast(107%);
+}
+
+@mixin to-red-200 {
+    filter:   invert(26%) sepia(100%) saturate(7472%) hue-rotate(342deg) brightness(91%) contrast(105%)
+}
+
+@mixin to-red-200-300 {
+    filter: invert(18%) sepia(96%) saturate(4632%) hue-rotate(339deg) brightness(82%) contrast(116%);
+}
+
+@mixin to-blue-200 {
+    filter: invert(50%) sepia(100%) saturate(1190%) hue-rotate(173deg) brightness(102%) contrast(87%);
+}
+
+@mixin to-blue-300 {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(95%) saturate(4106%) hue-rotate(170deg) brightness(95%) contrast(85%);
+}
+@mixin to-blue-200-300 {
+    filter: invert(53%) sepia(95%) saturate(1696%) hue-rotate(168deg) brightness(91%) contrast(93%);
+}
+
+// @mixin to-green-300 {
+//     filter: brightness(0) saturate(100%) invert(18%) sepia(26%) saturate(1997%) hue-rotate(140deg) brightness(100%) contrast(102%);
+// }
+
+// @mixin to-yellow-100 {
+//     filter: brightness(0) saturate(100%) invert(90%) sepia(3%) saturate(1800%) hue-rotate(331deg) brightness(111%) contrast(98%);
+// }
+
+// @mixin to-yellow-200 {
+//     filter: brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(1052%) hue-rotate(346deg) brightness(100%) contrast(93%);
+// }
+
+// @mixin to-light-green-300 {
+//     filter: brightness(0) saturate(100%) invert(88%) sepia(40%) saturate(208%) hue-rotate(104deg) brightness(91%) contrast(93%);
+// }
+
+// @mixin to-light-green-200 {
+//     filter: brightness(0) saturate(100%) invert(100%) sepia(40%) saturate(516%) hue-rotate(84deg) brightness(96%) contrast(92%);
+// }
+
+@mixin transition-standart {
+    transition: 0.3s ease-in-out;
+}
+
+@mixin shadow-100 {
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+@mixin medium-icon {
+    display: flex;
+    width: 2.4rem;
+    height: 2.4rem;
+}

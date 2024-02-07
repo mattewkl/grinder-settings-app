@@ -1,0 +1,163 @@
+.base-text {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.title {
+    @extend .base-text;
+
+    &-1 {
+        font-weight: 500;
+
+        @extend .base-text;
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+
+    &-2 {
+        @extend .base-text;
+        font-weight: 500;
+
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+
+    &-3 {
+        @extend .base-text;
+        font-weight: 500;
+
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+
+    &-4 {
+        @extend .base-text;
+        font-weight: 500;
+
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    &-5 {
+        @extend .base-text;
+        font-weight: 500;
+
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    &-6 {
+        @extend .base-text;
+        font-weight: 500;
+
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    &-7 {
+        @extend .base-text;
+        font-weight: 500;
+
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    &-8 {
+        @extend .base-text;
+        font-weight: 500;
+
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+
+.par {
+    @extend .base-text;
+    font-weight: normal;
+
+    &-1 {
+        @extend .base-text;
+        font-weight: normal;
+
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+
+    &-2 {
+        @extend .base-text;
+        font-weight: normal;
+
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+
+    &-3 {
+        @extend .base-text;
+        font-weight: normal;
+
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+
+    &-4 {
+        @extend .base-text;
+        font-weight: normal;
+
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    &-5 {
+        @extend .base-text;
+        font-weight: normal;
+
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    &-6 {
+        @extend .base-text;
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    &-7 {
+        @extend .base-text;
+        font-weight: normal;
+
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    &-8 {
+        @extend .base-text;
+        font-weight: normal;
+
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+
+.color-gray-400 {
+    color: $gray-400
+}
+
+.color-red-200 {
+    color: $red-200;
+}
+
+.color-blue-200 {
+    color: $blue-200;
+}
+
+
+.color-gray-500 {
+    color: $gray-500
+}
+
+.no-link-style {
+    text-decoration: none;
+}
