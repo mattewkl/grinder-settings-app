@@ -1,0 +1,5 @@
+nuxt
+.nuxt
+.output
+dist/_nuxt
+node_modules
