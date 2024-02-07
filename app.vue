@@ -102,7 +102,7 @@ const grindersArray =
       800,
       830
     ],
-    "Comandant e (red clix)": [
+    "Comandante (red clix)": [
       22,
       26,
       29,
